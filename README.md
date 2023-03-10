@@ -24,8 +24,8 @@ cat sample.json | nats req '$SCHEMA.REGISTER.my_cool_schema'
 Publish a message to a stream that uses the schema:
 
 ```bash
-nats req numbers.foobar 1 # This should work
-nats req numbers.foobar abc # This should fail
+nats req '$SCHEMA.VALIDATE.numbers.foobar' 1 # This should work, and the message is passed to numbers.foobar
+nats req '$SCHEMA.VALIDATE.numbers.foobar' abc # This should fail
 ```
 
 
