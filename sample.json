@@ -1,0 +1,5 @@
+{
+  "subject": "numbers.>",
+  "type": "jsonschema",
+  "body": "{ \"type\": \"integer\" }"
+}
